@@ -1,8 +1,8 @@
 export class Stack {
-  stack: Array<string | number> = [];
-  maxLength = 15;
+  private stack: Array<string | number> = [];
+  private maxLength: number = 0;
 
-  constructor(maxLength: number = 15) {
+  constructor(maxLength: number) {
     this.maxLength = maxLength;
   }
 
