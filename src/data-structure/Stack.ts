@@ -21,10 +21,6 @@ export class Stack {
   }
 
   pop(): string | number | undefined {
-    if (this.isEmpty) {
-      return undefined;
-    } else {
-      return this.stack.pop();
-    }
+    return this.isEmpty ? undefined : this.stack.pop();
   }
 }
