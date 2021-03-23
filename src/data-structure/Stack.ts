@@ -1,3 +1,4 @@
+// Last in first out (LIFO)
 export class Stack {
   private stack: Array<string | number> = [];
   private maxLength: number = 0;
@@ -21,6 +22,8 @@ export class Stack {
   }
 
   pop(): string | number | undefined {
-    return this.isEmpty ? undefined : this.stack.pop();
+    if (!this.isEmpty) {
+      return this.stack.pop();
+    }
   }
 }
