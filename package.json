@@ -1,7 +1,7 @@
 {
-  "name": "js-algorithm",
+  "name": "learn-javascript",
   "version": "1.0.0",
-  "description": "",
+  "description": "Practice and learn JavaScript",
   "main": "index.js",
   "scripts": {
     "build": "npx tsc",
