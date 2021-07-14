@@ -4,6 +4,11 @@ describe('Array: rotate left', () => {
   const testArray = [1,5,6];
   const testArrayToString = `[${testArray.toString()}]`;
 
+  test('Array [], rotation = 0', () => {
+    const rotatedArray = rotateLeft([], 0); 
+    expect(rotatedArray).toStrictEqual([]);
+  });
+
   test('Array [], rotation = 1', () => {
     const rotatedArray = rotateLeft([], 1); 
     expect(rotatedArray).toStrictEqual([]);
